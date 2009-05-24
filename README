@@ -1,0 +1,36 @@
+This work is heavily based on work originally released by IgniteRealtime under
+the name 'Whack API'. In fact this is a fork from 2009 May 23 of that software
+for the following purposes:
+
+* maintain a public Git-enabled project that is geared to work with other XMPP
+  servers as well as OpenFire, most notably ejabberd
+
+* provide a vendor-neutral repository for external component examples and
+  sub-projects.
+
+* Serve as a testing ground for experiments in XMPP component protocol
+  extensions
+
+Given the plans above and the nature of some of the modifications it seems
+reasonable to use a different name.  We chose adirondack for the tie to NY and
+for the common ack ending.
+
+Modifications made by Communitivity.org up to this version:
+
+* Removed org.jivesoftware.whack.container
+* Removed libraries no longer needed due to above
+* Created NetBeans project
+* Moved the weather sam
+* Converted build to Maven
+* Temporarily reduced stringprep compliance by substituting use of java.text.IDN
+  in place of jivesoftware stringprep jar classes, due to stringprep not being
+  in a well-known Maven repo. May need to do a full compliance with uc4j.
+  Should be fine for English based domain names.
+
+Near-term planned modifications:
+
+* OSGi compatibility
+* Addition example components, each integrated into build as a separate Maven
+  profile to maintain dependency separation
+
+
